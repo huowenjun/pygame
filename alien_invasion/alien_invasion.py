@@ -1,6 +1,8 @@
 import sys
 import pygame
 from settings import Settings
+from ship import Ship
+
 def run_game():
     pygame.init()
     ai_settings = Settings()
@@ -9,6 +11,8 @@ def run_game():
     )#幕布
     pygame.display.set_caption(ai_settings.name)#游戏名称
     # bg_color = (230,230,230)#背景色
+    #创建一艘飞船
+    ship = Ship(scree)
 
     #开始游戏的主循环
     while True:
@@ -16,5 +20,6 @@ def run_game():
             if event.type == pygame.QUIT:
                 sys.exit()
         scree.fill(ai_settings.bg_color)
+        ship.blitem()
         pygame.display.flip()
 run_game()

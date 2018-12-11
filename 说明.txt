@@ -1,1 +1,2 @@
-Python---��չpygameС��Ϸ
+Python---扩展pygame小游戏
+

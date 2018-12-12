@@ -22,7 +22,7 @@ def run_game():
         # for event in pygame.event.get():
         #     if event.type == pygame.QUIT:
         #         sys.exit()
-        gf.check_events()
+        gf.check_events(ship)
         # scree.fill(ai_settings.bg_color)
         # ship.blitem()
         # pygame.display.flip()

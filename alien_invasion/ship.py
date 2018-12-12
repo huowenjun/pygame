@@ -1,4 +1,7 @@
 import pygame
+"""
+飞船
+"""
 class Ship():
     def __init__(self,screen):
         self.screen = screen

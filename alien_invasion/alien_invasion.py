@@ -15,7 +15,7 @@ def run_game():
     #背景图
     background = Background(scree)
     #创建一艘飞船
-    ship = Ship(scree)
+    ship = Ship(ai_settings,scree)
     # pygame.image.load("saturn_family1.jpg").convert()
     #开始游戏的主循环
     while True:
